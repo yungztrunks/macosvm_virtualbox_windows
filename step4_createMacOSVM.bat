@@ -59,7 +59,7 @@ GOTO endscript
 echo:
 echo "CPU vendor is AMD"
 echo "Changing VM properties for AMD-based CPU"
-"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe"e modifyvm "macOS1" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
+"C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" modifyvm "macOS1" --cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" setextradata "macOS1" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "iMac11,3"
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" setextradata "macOS1" "VBoxInternal/Devices/efi/0/Config/DmiSystemVersion" "1.0"
 "C:\Program Files\Oracle\VirtualBox\VBoxManage.exe" setextradata "macOS1" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Iloveapple"
@@ -77,4 +77,5 @@ echo == macOS1 VM created and registered in VirtualBox
 echo == Start this VM and complete the macOS Catalina installation, opening VirtualBox GUI...
 echo ================================
 pause
+
 "C:\Program Files\Oracle\VirtualBox\VirtualBox.exe"
